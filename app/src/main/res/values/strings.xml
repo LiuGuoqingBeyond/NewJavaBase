@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">agentpos</string>
+
+    <!--欢迎页-->
+    <string name="welcome_use">欢迎使用</string>
+    <string name="welcome_use_app">中 付 支 付 代 理 APP</string>
+    <string name="login_btn">登录</string>
+
+    <!--登录页-->
+    <string name="login_account_hint">请输入用户名</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_no_account">用户名不能为空</string>
+    <string name="login_min_eleven">用户名小于11位</string>
+
+    <!--主页-->
+    <string name="main_app">中付掌柜</string>
+    <string name="main_home">主页</string>
+    <string name="main_me">我的</string>
+    <string name="part_permission_fail">部分权限请求失败，可能会影响程序使用。请到设置界面赋予权限。</string>
+    <string name="exit_tip">再按一次退出程序</string>
+
+    <!--home页-->
+    <string name="home_add_merchant">新增商户</string>
+    <string name="home_merchant_query">商户查询</string>
+    <string name="home_benefit_query">分润查询</string>
+    <string name="home_trade_query">交易查询</string>
+    <string name="home_trade_system">交易统计</string>
+    <string name="home_benefit_system">分润统计</string>
+    <string name="home_backlog_schedule">待办事项</string>
+    <string name="home_yesterday_money">昨日交易额(元)</string>
+    <string name="home_today_money">当日交易额(元)</string>
+    <string name="home_benefit_total">分润统计</string>
+    <string name="home_yesterday_benefit">昨日分润金额(元)</string>
+    <string name="home_mouth_benefit">本月分润金额(元)</string>
+    <string name="home_trade_single">交易暂缓</string>
+    <string name="home_paragraph_single">提现调单</string>
+    <string name="home_trade_singles">交易暂缓  (%1$s)</string>
+    <string name="home_paragraph_singles">提现调单  (%1$s)</string>
+
+    <!--我的-->
+    <string name="mine_merchant">我的商户(个)</string>
+    <string name="mine_message">我的消息</string>
+    <string name="mine_feedback">意见反馈</string>
+    <string name="mine_password">修改密码</string>
+    <string name="mine_hotel">联系客服</string>
+    <string name="mine_my_benefit">我的分润(元)</string>
+    <string name="mine_old_pwd">原密码</string>
+    <string name="mine_import_oldPwd">请输入您的原密码</string>
+    <string name="mine_true_modify">确认修改</string>
+    <string name="mine_modify_success">密码修改成功</string>
+    <string name="mine_commit_feedback">提交反馈</string>
+    <string name="mine_hint_feedback">亲，有什么不满意的说两句吧，我们会尽快反馈给技术同学，给予解决的。</string>
+    <string name="mine_feedback_success">意见反馈成功</string>
+    <string name="personal_welcome_before_moring">早上好</string>
+    <string name="personal_welcome_moring">上午好</string>
+    <string name="personal_welcome_noon">中午好</string>
+    <string name="personal_welcome_afternoon">下午好</string>
+    <string name="personal_welcome_evening">晚上好</string>
+
+    <!--新增商户-->
+    <string name="add_mer">新增商户</string>
+    <string name="add_choose_settle_type">请选择结算类型</string>
+    <string name="add_choose_mer">请选择商户类型</string>
+    <string name="add_mer_grade">商户评级</string>
+    <string name="add_choose_grade">请选择商户评级</string>
+    <string name="add_mer_type">商户类型</string>
+    <string name="add_project_type">项目类型</string>
+    <string name="add_choose_type">请选择项目类型</string>
+    <string name="add_mer_name">商户名称</string>
+    <string name="add_write_name">请填写商户名称</string>
+    <string name="add_in_location">所在地区</string>
+    <string name="add_choose_location">请选择地区</string>
+    <string name="add_detailed_address">详细地址</string>
+    <string name="add_write_address">请填写详细地址</string>
+    <string name="add_contact_way">联系方式</string>
+    <string name="add_write_contact_way">请填写联系方式</string>
+    <string name="add_contact_man">联系人</string>
+    <string name="add_write_contact_man">请填写联系人</string>
+    <string name="add_id_card">身份证</string>
+    <string name="add_write_id">请填写身份证号码</string>
+    <string name="add_id_validity">身份证有效期</string>
+    <string name="add_write_id_validity">请填写身份证有效期</string>
+    <string name="add_write_true_id_validity">请填写正确的身份证有效期</string>
+    <string name="add_id_dialog">年月日 例：20180330\n若是长期请填写：99991231</string>
+    <string name="add_business_no">营业执照号</string>
+    <string name="add_write_business_no">请填写社会统一信用代码</string>
+    <string name="add_legal_representative">法定代表人</string>
+    <string name="add_write_legal_representative">请填写法定代表人</string>
+    <string name="add_settle_name">结算人名</string>
+    <string name="add_write_settle_name">请填写结算人姓名</string>
+    <string name="add_settle_type">结算类型</string>
+    <string name="add_settle_private_card">对私银行卡</string>
+    <string name="add_public">对公</string>
+    <string name="add_private">对私存折</string>
+    <string name="add_settle_account">结算账号</string>
+    <string name="add_write_settle_account">请填写结算账号</string>
+    <string name="add_city">开户城市</string>
+    <string name="add_choose_city">请选择开户城市</string>
+    <string name="add_bank">开户银行</string>
+    <string name="add_choose_bank">请选择开户银行</string>
+    <string name="add_banks">开户支行</string>
+    <string name="add_choose_banks">请选择开户支行</string>
+    <string name="add_debit_rate">借记卡费率</string>
+    <string name="add_debit_capping">借记卡封顶</string>
+    <string name="add_yuan">元</string>
+    <string name="add_credit_rate">贷记卡费率</string>
+    <string name="add_settle_rate">结算费用</string>
+    <string name="add_zero_yuan">0元</string>
+    <string name="add_three_yuan">3元</string>
+    <string name="add_settle_cycle">结算周期</string>
+    <string name="add_t">T+1</string>
+    <string name="add_d">D+1</string>
+    <string name="add_fixation_amount">固定机数量</string>
+    <string name="add_amount">台</string>
+    <string name="add_fixation_type">固定机型号</string>
+    <string name="add_move_amount">移动机数量</string>
+    <string name="add_move_type">移动机型号</string>
+    <string name="add_net_98">携机入网返98</string>
+    <string name="add_data_update">资料上传</string>
+    <string name="add_old_remark">原备注</string>
+    <string name="add_remark">备注</string>
+    <string name="add_write_remark">请填写备注...</string>
+    <string name="add_no_remark">暂无备注</string>
+    <string name="add_img_update">图片上传</string>
+    <string name="add_commit_success">商户提交成功</string>
+    <string name="add_continue_net">继续商户入网</string>
+    <string name="add_query_record">查看记录</string>
+    <string name="add_base_info">基础信息</string>
+    <string name="add_select_info">结算信息</string>
+    <string name="add_merchant_img">商户照片</string>
+    <string name="add_old_img">已传图片</string>
+    <string name="add_new_remark">新增备注</string>
+
+    <!--商户查询-->
+    <string name="mer_total">商户统计</string>
+    <string name="mer_total_count">累计商户数</string>
+    <string name="mer_today_add">今日\n新增商户数</string>
+    <string name="mer_week_add">本周\n新增商户数</string>
+    <string name="mer_month_add">今月\n新增商户数</string>
+    <string name="mer_ready_audited">今日\n待审核商户</string>
+    <string name="mer_passnot_audited">今日\n审核不通过商户</string>
+    <string name="mer_pass_audited">今日\n审核通过商户</string>
+    <string name="mer_commit_audited">今日\n提交中商户</string>
+    <string name="mer_will_audit">待审核商户</string>
+    <string name="mer_proposer">申请人:</string>
+    <string name="mer_number">商户号:</string>
+    <string name="mer_detail">商户详情</string>
+    <string name="mer_not_pass">审核不通过商户</string>
+    <string name="mer_audit_pass">审核通过商户</string>
+    <string name="mer_commit">提交中商户</string>
+    <string name="mer_business_license">是否有营业执照</string>
+    <string name="mer_business_number">营业执照号</string>
+    <string name="mer_legal_representative">法定代表人</string>
+    <string name="mer_img_data">图片资料</string>
+    <string name="mer_customer_manager">客户经理</string>
+    <string name="mer_merchant_null">商户编码和商户名不能为空</string>
+
+    <!--分润统计-->
+    <string name="share_total_pay">总交易金额:</string>
+    <string name="share_total_money">总分润金额:</string>
+    <string name="share_today_pay">今日交易金额(元)</string>
+    <string name="share_trade_time">交易时间</string>
+
+    <!--交易查询-->
+    <string name="trade_week">本周交易金额(元)</string>
+    <string name="trade_this_month">本月交易金额(元)</string>
+    <string name="trade_three_month">近三个月交易金额(元)</string>
+    <string name="trade_tips">商户类型包括：传统商户、刷卡头、D1商户\n交易类型包括：刷卡交易，微信支付宝，无卡快捷</string>
+    <string name="trade_detail">交易明细</string>
+    <string name="trade_fast_pay">秒到出款:</string>
+    <string name="trade_time">交易时间:</string>
+    <string name="trade_money">交易金额:</string>
+    <string name="trade_type">交易类型</string>
+
+    <!--调单管理-->
+    <string name="order_manager">调单管理</string>
+    <string name="order_not_find">找不到关于“ABCDABCD”商户的消息</string>
+    <string name="order_set_time">创建时间:</string>
+    <string name="order_manage_detail">交易出款调单详情</string>
+    <string name="order_manage_trade">交易出款调单</string>
+    <string name="order_manage_trade_success">交易出款调单提交成功</string>
+    <string name="order_withdrawal_detail">提现调单详情</string>
+    <string name="order_withdrawal_single">提现调单</string>
+    <string name="order_withdrawal_single_success">提现调单提交成功</string>
+    <string name="order_withdrawal_money">提现金额:</string>
+    <string name="order_withdrawal_time">提现时间:</string>
+    <string name="order_mer_number">商户号</string>
+    <string name="order_time">创建时间</string>
+    <string name="order_status">处理标识</string>
+    <string name="order_withdrawal_man">调单方</string>
+    <string name="order_device_number">设备号</string>
+    <string name="order_with_money">提现金额</string>
+    <string name="order_withdrawal_charge">提现手续费率</string>
+    <string name="order_contract_charge">签约手续费率</string>
+    <string name="order_paragraph_charge">出款手续费</string>
+    <string name="order_with_time">提现时间</string>
+    <string name="order_audit_status">审核状态</string>
+    <string name="order_paragraph_status">出款状态</string>
+    <string name="order_paragraph_time">出款时间</string>
+    <string name="order_tips_time">查单时间</string>
+    <string name="order_number_null">调单号不能为空</string>
+
+    <!--筛选-->
+    <string name="filter_mid_query">输入商户号或商户名进行查询</string>
+    <string name="filter_net_time">入网时间</string>
+    <string name="filter_turn_to">至</string>
+    <string name="filter_reset">重置</string>
+    <string name="filter_all">全部</string>
+    <string name="filter_ready_pass">待审核</string>
+    <string name="filter_no_pass">审核不通过</string>
+    <string name="filter_pass">审核通过</string>
+    <string name="filter_pos">传统POS</string>
+    <string name="filter_pos_top">刷卡头</string>
+    <string name="filter_swiping_trade">刷卡交易</string>
+    <string name="filter_wechat_trade">微信交易</string>
+    <string name="filter_alipay_trade">支付宝交易</string>
+    <string name="filter_nocard_fast">无卡快捷</string>
+    <string name="filter_time">起始时间不能小于结束时间</string>
+    <string name="filter_commit">提交中</string>
+
+    <!--其它-->
+    <string name="text_hot_line">400-8990-900</string>
+    <string name="text_success">完成</string>
+    <string name="text_exit">退出</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_call">呼叫</string>
+    <string name="text_next">下一步</string>
+    <string name="text_filter">筛选</string>
+    <string name="text_commit">提交</string>
+    <string name="text_true">确定</string>
+    <string name="text_continue_commit">继续提交</string>
+    <string name="text_keyword_search">输入银行关键字进行查询</string>
+    <string name="text_know">知道了</string>
+    <string name="text_chose_data">请选择日期</string>
+    <string name="text_photo">拍照</string>
+    <string name="text_picture">从相册中选取</string>
+    <string name="text_data_null">暂无相关数据</string>
+    <string name="text_max_time">最大时间跨度为31天</string>
+    <string name="text_history_today">历史和当天不能同时查询</string>
+    <string name="text_no_open">暂未开放，敬请期待</string>
+    <string name="text_add_img">请添加图片</string>
+    <string name="text_yes">是</string>
+    <string name="text_check_update">检测到更新</string>
+    <string name="text_introduction_update">推介更新</string>
+    <string name="text_update_now">立即更新</string>
+    <string name="text_update_note">暂不更新</string>
+    <string name="text_notification_check">正在下载中，请查看通知栏！</string>
+
+    <!--限制输入条件-->
+    <string name="text_true_id">请输入正确的身份证号</string>
+    <string name="text_true_card">请输入正确是银行卡号</string>
+    <string name="text_number_letter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="text_id_length">1234567890X</string>
+</resources>

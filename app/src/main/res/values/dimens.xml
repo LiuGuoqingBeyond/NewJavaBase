@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_8dp">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 字体大小 -->
+
+    <dimen name="six">6sp</dimen>
+    <dimen name="eight">8sp</dimen>
+
+    <dimen name="ten">10sp</dimen>
+    <dimen name="eleven">11sp</dimen>
+    <dimen name="twelve">12sp</dimen>
+    <dimen name="thirteen">13sp</dimen>
+    <dimen name="fourteen">14sp</dimen>
+    <dimen name="fifteen">15sp</dimen>
+    <dimen name="sixteen">16sp</dimen>
+    <dimen name="seventeen">17sp</dimen>
+    <dimen name="eighteen">18sp</dimen>
+    <dimen name="twenty">20sp</dimen>
+    <dimen name="twenty_two">22sp</dimen>
+    <dimen name="twenty_four">24sp</dimen>
+    <dimen name="thirty">30sp</dimen>
+    <dimen name="fifty">50sp</dimen>
+    <dimen name="loing_size">18sp</dimen>
+    <dimen name="pay_money_size">20sp</dimen>
+    <dimen name="new_back">15sp</dimen>
+
+    <dimen name="choose_industry_textsize">90dp</dimen>
+    <dimen name="choose_newpay_rghight">120dp</dimen>
+
+</resources>

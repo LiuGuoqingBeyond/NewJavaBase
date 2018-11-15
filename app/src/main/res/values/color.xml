@@ -1,0 +1,50 @@
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <!-- 登录注释 -->
+    <color name="red">#ab2a2f</color>
+    <color name="forget_pwd">#408cca</color>
+    <color name="fragment_bond_device_with_phone_bt_edittext">#575757</color>
+    <color name="fragment_bond_device_with_phone_edittext">#cbcbcb</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="payMoneyTime">#f93536</color>
+    <color name="tradeResultCardNo">#8a898e</color>
+    <color name="tradeResultQuery">@color/colorPrimary</color>
+
+    <!-- <color name="half_transparent">#9000</color> -->
+    <color name="half_transparent">#0000</color>
+    <color name="obt_auth_bk">#929292</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_frame">#404040</color>
+    <color name="bg_homepage_color">#eeeeee</color>
+    <color name="bg">#E0E0E0</color>
+    <color name="font_dark">#4D4F53</color>
+    <color name="hint_dark">#929292</color>
+    <color name="gray_frame">#FF999999</color>
+    <color name="gl_background">#737373</color>
+    <color name="color">#545657</color>
+    <color name="color_">#BFBFBF</color>
+    <color name="main_color">@color/colorPrimary</color>
+    <color name="new_bg">#EEEEEE</color>
+    <color name="manager_text">#828282</color>
+    <color name="yuanjiaojuxing">#D4D4D4</color>
+    <color name="hint_color">#C7C7CD</color>
+    <color name="red_color">#FF0000</color>
+    <color name="pay_money">#0B0B0B</color>
+    <color name="money_color">#AAAAAA</color>
+    <color name="add_card_dialog">#0076FF</color>
+    <color name="status_bar_color">#57b2ec</color>
+    <color name="array_list1">#515399</color>
+    <color name="array_list2">#f5a159</color>
+    <color name="array_list3">#e44e51</color>
+    <color name="array_list4">#72cb6f</color>
+    <color name="greys">#F6F6F6</color>
+    <color name="btn_num_bg">#2187D8</color>
+    <color name="greys_text">#FF030303</color>
+    <color name="app_main_color">#4990E2</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="light_black">#FF000000</color>
+</resources>

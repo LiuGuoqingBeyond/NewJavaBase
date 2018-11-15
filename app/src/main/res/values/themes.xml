@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:listDivider">@drawable/item_line_bg</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppWelcome" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="ImageTranslucentTheme" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
+</resources>

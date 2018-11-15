@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textStyle_welcome_big">
+        <item name="android:textSize">@dimen/textSizeBigTitle</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textStyle_welcome_small">
+        <item name="android:textSize">@dimen/textSizeTitle</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textStyle_welcome_smallest">
+        <item name="android:textSize">@dimen/textSizeRedPoint</item>
+        <item name="android:textColor">@color/textColorHint</item>
+    </style>
+
+    <style name="textStyle_caption">
+        <item name="android:textSize">@dimen/textSizeCaption</item>
+        <item name="android:textColor">@color/textColorHint</item>
+    </style>
+
+    <!-- 常用按钮的样式无边框实心 -->
+    <style name="btnStyle_normal" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/login_background</item>
+        <item name="android:textSize">@dimen/btnTextSize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 常用按钮的样式有边框镂空 -->
+    <style name="btnStyle_stroke" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/radiu_stroke</item>
+        <item name="android:textSize">@dimen/btnTextSize</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textStyle_etText">
+        <item name="android:textSize">@dimen/btnTextSize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+    </style>
+
+    <style name="textStyle_body_80black">
+        <item name="android:textSize">@dimen/textSizeBody</item>
+        <item name="android:textColor">@color/alpha_80_black</item>
+        <item name="android:textColorHint">@color/alpha_30_black</item>
+    </style>
+
+    <style name="textStyle_sub_80black">
+        <item name="android:textSize">@dimen/textSizeSubtitle</item>
+        <item name="android:textColor">@color/alpha_80_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textStyle_body_30black">
+        <item name="android:textSize">@dimen/textSizeCaption</item>
+        <item name="android:textColor">@color/alpha_30_black</item>
+    </style>
+
+    <style name="textStyle_sub_80black_two">
+        <item name="android:textSize">@dimen/textSizeSubtitle</item>
+        <item name="android:textColor">@color/alpha_80_black</item>
+    </style>
+
+    <style name="textStyle_sub_60black">
+        <item name="android:textSize">@dimen/textSizeSubtitle</item>
+        <item name="android:textColor">@color/alpha_60_black</item>
+    </style>
+
+    <style name="textStyle_sub_colorPrimary">
+        <item name="android:textSize">@dimen/textSizeSubtitle</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textStyle_sub_white">
+        <item name="android:textSize">@dimen/textSizeSubtitle</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textStyle_60_black">
+        <item name="android:textColor">@color/alpha_60_black</item>
+        <item name="android:textColorHint">@color/alpha_30_black</item>
+        <item name="android:textSize">@dimen/textSizeBody</item>
+    </style>
+
+    <style name="textStyle_30_black">
+        <item name="android:textSize">@dimen/textSizeBody</item>
+        <item name="android:textColor">@color/alpha_60_black</item>
+    </style>
+
+    <style name="textStyle_white" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/textSizeBody</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textStyle_18_80black">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/alpha_80_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textStyle_colorPrimary">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="radioButtonSelect">
+        <item name="android:textColor">@drawable/radiobutton_selector_color</item>
+        <item name="android:textSize">@dimen/textSizeBody</item>
+    </style>
+
+    <style name="textStyle_base_colorPrimary">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textStyle_base_30black">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/alpha_30_black</item>
+    </style>
+
+    <style name="textStyle_twenty_white">
+        <item name="android:textSize">@dimen/textSizeTitle</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

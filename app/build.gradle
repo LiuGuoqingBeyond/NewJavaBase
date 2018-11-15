@@ -1,0 +1,206 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        multiDexEnabled true
+        versionCode = rootProject.ext.versionCode
+        versionName = rootProject.ext.versionName
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        ndk {
+            abiFilters "armeabi"//"armeabi" ,"x86", "mips",
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: rootProject.ext.applicationId,
+                JPUSH_APPKEY : rootProject.ext.JPushAppKey,
+                JPUSH_CHANNEL: rootProject.ext.JPushChannelName,
+        ]
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+
+        debugConfig {
+            storeFile file("../xzf.keystore")
+            storePassword "123456"
+            keyAlias "whty"
+            keyPassword "123456"
+            v2SigningEnabled false
+        }
+        release {
+            storeFile file("../xzf.keystore")
+            storePassword "123456"
+            keyAlias "whty"
+            keyPassword "123456"
+            v2SigningEnabled false
+        }
+    }
+
+    flavorDimensions "official"
+
+    productFlavors {
+        development {
+            versionCode rootProject.ext.versionCode
+            versionName rootProject.ext.versionName
+            minSdkVersion 17
+            applicationId rootProject.ext.applicationId
+            dimension "official"
+            manifestPlaceholders = [app_name: rootProject.ext.appDebugName, app_icon: "@mipmap/ic_launcher"]
+            buildConfigField "String", "BASEURL", "\"https://cx.qtopay.cn:90/\""
+            buildConfigField "String", "BASE_URL_GATEWAY", "\"https://218.18.232.65:8082/\""
+            buildConfigField "String", "BASE_URL_NEW", "\"http://192.168.2.253:8101/\""
+            buildConfigField "String", "GATEWAY_SIGNATURE_CODE", "\"KjFaQRyeyApMpOX\""
+            buildConfigField "String", "IS_OFFICIAL", "\"true\""
+            buildConfigField "String", "JPUSH_APP_KEY", "\"e3489dd63e3ae7140023592e\""
+            resValue("string", "app_name_xzf", rootProject.ext.appDebugName)
+        }
+
+        produced {
+            versionCode rootProject.ext.versionCode
+            versionName rootProject.ext.versionName
+            minSdkVersion 17
+            applicationId rootProject.ext.applicationId
+            dimension "official"
+            manifestPlaceholders = [app_name: rootProject.ext.appName, app_icon: "@mipmap/ic_launcher"]
+            buildConfigField "String", "BASEURL", "\"https://192.168.2.70:8443/\""
+            buildConfigField "String", "BASE_URL_GATEWAY", "\"https://gateway.qtopay.cn:8081/\""
+            buildConfigField "String", "BASE_URL_NEW", "\"https://ss.qtopay.cn:8105/\""
+            buildConfigField "String", "WS_SERVER_URL", "\"http://192.168.2.235:6451/\""
+            buildConfigField "String", "GATEWAY_SIGNATURE_CODE", "\"iVDiCegzWyqQjiy\""
+            buildConfigField "String", "IS_OFFICIAL", "\"true\""
+            buildConfigField "String", "JPUSH_APP_KEY", "\"e3489dd63e3ae7140023592e\""
+            resValue("string", "app_name_xzf", rootProject.ext.appName)
+        }
+
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        disable "ResourceType"
+        abortOnError false
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    sourceSets.main {
+        jniLibs.srcDir 'src/main/jniLibs'
+        jni.srcDirs = [] //disable automatic ndk-bui`ld call
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    buildTypes {
+
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            debuggable false
+            zipAlignEnabled true
+            //shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "${rootProject.ext.appName}_${variant.versionName}_${new Date().format("yyMMddHHmmss")}.apk"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:support-vector-drawable:$rootProject.ext.supportLibraryVersion"
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:percent:$rootProject.ext.supportLibraryVersion"
+
+    compile project(':AFrameLib')
+
+    compile "com.tencent.bugly:crashreport:$rootProject.ext.buglyVersion"
+    compile "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjavaVersion"
+    compile "com.trello.rxlifecycle2:rxlifecycle:$rootProject.ext.rxLifecycleVersion"
+    compile "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.ext.rxLifecycleVersion"
+    compile "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.ext.rxpermissionsVersion"
+    compile "com.jakewharton.rxbinding2:rxbinding:$rootProject.ext.rxbindingVersion"
+    compile "com.jakewharton.rxbinding2:rxbinding-support-v4:$rootProject.ext.rxbindingVersion"
+    compile "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:$rootProject.ext.rxbindingVersion"
+    compile "com.jakewharton.rxbinding2:rxbinding-design:$rootProject.ext.rxbindingVersion"
+    compile "com.orhanobut:logger:$rootProject.ext.loggerVersion"
+    compile "com.umeng.analytics:analytics:$rootProject.ext.umengVersion"
+    compile "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.ext.BaseRecyclerViewAdapterHelperVersion"
+    compile "com.android.support:multidex:$rootProject.ext.multidexVersion"
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    kapt "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+    compile 'com.github.bumptech.glide:glide:4.3.0'
+    kapt 'com.github.bumptech.glide:compiler:4.3.0'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'top.zibin:Luban:1.1.3'
+    compile 'com.google.zxing:core:3.3.0'
+
+    //下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-1'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-1'
+
+    compile 'com.lzy.widget:imagepicker:0.6.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile "org.jetbrains.anko:anko-coroutines:$rootProject.ext.AnkoVersion"
+    compile "org.jetbrains.anko:anko:$rootProject.ext.AnkoVersion"
+    compile "org.jetbrains.anko:anko-commons:$rootProject.ext.AnkoVersion"
+    compile "org.jetbrains.anko:anko-design:$rootProject.ext.AnkoVersion"
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.alibaba:fastjson:1.1.59.android'
+    //implementation "cn.jiguang.sdk:jpush:$rootProject.ext.JPushVersion"
+    //implementation "cn.jiguang.sdk:jcore:$rootProject.ext.JPushCcoreVersion"
+
+    //compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    debugCompile "com.squareup.leakcanary:leakcanary-android:$leakcanary"
+    releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary"
+    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary"
+}
