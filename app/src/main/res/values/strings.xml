@@ -4,6 +4,7 @@
     <!--欢迎页-->
     <string name="welcome_use">欢迎使用</string>
     <string name="welcome_use_app">中 付 支 付 代 理 APP</string>
+    <string name="login_welcome_text">欢 迎 使 用 中 付 掌 柜</string>
     <string name="login_btn">登录</string>
 
     <!--登录页-->
@@ -11,6 +12,7 @@
     <string name="login_password_hint">请输入密码</string>
     <string name="login_no_account">用户名不能为空</string>
     <string name="login_min_eleven">用户名小于11位</string>
+    <string name="login_open_location">无法定位，请打开定位服务</string>
 
     <!--主页-->
     <string name="main_app">中付掌柜</string>
@@ -72,8 +74,8 @@
     <string name="add_choose_location">请选择地区</string>
     <string name="add_detailed_address">详细地址</string>
     <string name="add_write_address">请填写详细地址</string>
-    <string name="add_contact_way">联系方式</string>
-    <string name="add_write_contact_way">请填写联系方式</string>
+    <string name="add_contact_way">联系电话</string>
+    <string name="add_write_contact_way">请填写联系电话</string>
     <string name="add_contact_man">联系人</string>
     <string name="add_write_contact_man">请填写联系人</string>
     <string name="add_id_card">身份证</string>
@@ -84,6 +86,7 @@
     <string name="add_id_dialog">年月日 例：20180330\n若是长期请填写：99991231</string>
     <string name="add_business_no">营业执照号</string>
     <string name="add_write_business_no">请填写社会统一信用代码</string>
+    <string name="add_write_true_business_no">请填写15或18位信用代码</string>
     <string name="add_legal_representative">法定代表人</string>
     <string name="add_write_legal_representative">请填写法定代表人</string>
     <string name="add_settle_name">结算人名</string>
@@ -122,6 +125,8 @@
     <string name="add_write_remark">请填写备注...</string>
     <string name="add_no_remark">暂无备注</string>
     <string name="add_img_update">图片上传</string>
+    <string name="add_net_data">(商户入网图片资料)</string>
+    <string name="add_electronic_signature">签名确认</string>
     <string name="add_commit_success">商户提交成功</string>
     <string name="add_continue_net">继续商户入网</string>
     <string name="add_query_record">查看记录</string>
@@ -130,6 +135,51 @@
     <string name="add_merchant_img">商户照片</string>
     <string name="add_old_img">已传图片</string>
     <string name="add_new_remark">新增备注</string>
+    <string name="add_fast_discrete">秒到机（借贷分离）</string>
+    <string name="add_fast_indiscrete">秒到机（借贷不分）</string>
+    <string name="add_payment_fee">出款费</string>
+    <string name="add_select_payment_fee">请选择出款费用</string>
+    <string name="add_agree">我已阅读并同意</string>
+    <string name="add_agree_agreement">《中付支付商户签约协议》</string>
+    <string name="add_zero_withdraw_fee">秒到机(+0元出款费)</string>
+    <string name="add_two_withdraw_fee">秒到机(+2元出款费)</string>
+    <string name="add_choose_withdraw_fee">请选择出款费</string>
+    <string name="add_check_id">检测到您曾使用该身份证进行商户进件操作是否同步当前进件信息?</string>
+    <string name="add_debit_big">借记卡费率在0.50-0.60之间</string>
+    <string name="add_capping_big">借记卡封顶在20-35之间</string>
+    <string name="add_credit_big">贷记卡费率在0.55-0.60之间</string>
+    <string name="add_net_tips_one">一、普通商户（一机一码）\n</string>
+    <string name="add_net_tips_two">1. 商户入网银联协议，需法人或负责人签名+按手印+盖公章\n
+2. 法人手持身份证正面原件照片，对公结算可不提供\n
+3. 法人身份证正面、反面原件照片，如提供复印件需加盖公章\n
+4. 法人收款结算银行卡原件照片，如提供复印件需加盖公章\n
+5. 营业执照原件照片，如提供复印件需加盖公章\n
+6. 店铺照片，门面招牌+内景至少各1张\n\n
+注：授权结算到非法人帐户，还需提供：\n
+1）结算授权书\n
+2）法人手持身份证正面+授权书拍照\n
+3）被授权收款人手持身份证正面原件照片\n
+4）被授权收款人身份证正面、反面原件照片\n
+5）被授权收款人结算银行卡原件照片\n</string>
+    <string name="add_net_tips_three">二、小微实体商户\n</string>
+    <string name="add_net_tips_four">1. 商户入网银联协议，需申请人签名+按手印\n
+2. 申请人手持身份证正面原件照片\n
+3. 申请人身份证正面、反面原件照片\n
+4. 申请人收款结算银行卡原件照片\n
+5. 店铺照片，门面招牌+内景至少各1张\n
+6. 申请人在其店铺收银台内照片\n</string>
+    <string name="add_net_tips_five">三、个人机\n</string>
+    <string name="add_net_tips_six">1. 商户入网银联协议，需申请人签名+按手印\n
+2. 申请人手持身份证正面原件照片\n
+3. 申请人身份证正面、反面原件照片\n
+4. 申请人收款结算银行卡原件照片\n</string>
+    <string name="add_net_tips_seven">四、K项目实体店\n</string>
+    <string name="add_net_tips_eight">1. 商户入网银联协议，需申请人签名+按手印\n
+2. 申请人手持身份证正面原件照片\n
+3. 申请人身份证正面、反面原件照片\n
+4. 申请人收款结算银行卡原件照片\n
+5. 店铺照片，门面招牌+内景至少各1张\n
+6. 申请人在其店铺收银台内照片（如有营业执照需提供）\n</string>
 
     <!--商户查询-->
     <string name="mer_total">商户统计</string>
@@ -219,7 +269,7 @@
     <string name="filter_commit">提交中</string>
 
     <!--其它-->
-    <string name="text_hot_line">400-8990-900</string>
+    <string name="text_hot_line">400-700-6889</string>
     <string name="text_success">完成</string>
     <string name="text_exit">退出</string>
     <string name="text_cancel">取消</string>
@@ -228,6 +278,7 @@
     <string name="text_filter">筛选</string>
     <string name="text_commit">提交</string>
     <string name="text_true">确定</string>
+    <string name="text_synchronization">同步</string>
     <string name="text_continue_commit">继续提交</string>
     <string name="text_keyword_search">输入银行关键字进行查询</string>
     <string name="text_know">知道了</string>
@@ -245,10 +296,36 @@
     <string name="text_update_now">立即更新</string>
     <string name="text_update_note">暂不更新</string>
     <string name="text_notification_check">正在下载中，请查看通知栏！</string>
+    <string name="text_set">设置</string>
+    <string name="text_other">其他</string>
+    <string name="text_open_location">请您打开定位权限，否则无法使用此功能</string>
 
     <!--限制输入条件-->
     <string name="text_true_id">请输入正确的身份证号</string>
     <string name="text_true_card">请输入正确是银行卡号</string>
+    <string name="text_sixteen_card">请输入16-19位银行卡号</string>
     <string name="text_number_letter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
     <string name="text_id_length">1234567890X</string>
+
+    <!-- 网络连接 -->
+    <string name="net_tips">网络提示信息</string>
+    <string name="net_set">网络未连接，如果继续，请先设置网络！</string>
+
+    <!--电子签名-->
+    <string name="sign_name_card">卡号：%1$s</string>
+    <string name="sign_name_money_no">交易金额：%1$s元</string>
+    <string name="sign_name_again">重签</string>
+    <string name="pls_sign_name">请先签名</string>
+    <string name="not_valid_sign_name">签名太简单请重签</string>
+    <string name="sign_name_send_fail">签名上送失败</string>
+    <string name="sign_name_info">请商户本人用正楷签名，姓名需清晰可辨</string>
+    <string name="sign_agree_cer">中付支付商户签约协议</string>
+    <string name="sign_name">请签署姓名</string>
+
+    <!--标签内容-->
+    <string name="text_tag1">加急1</string>
+    <string name="text_tag2">加加急2</string>
+    <string name="text_tag3">加加加急3</string>
+    <string name="text_tag4">加加加加急4</string>
+    <string name="text_tag5">加加加加加急5</string>
 </resources>

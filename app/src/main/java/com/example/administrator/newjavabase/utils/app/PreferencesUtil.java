@@ -1,4 +1,4 @@
-package com.example.administrator.newjavabase.utils.publicutils;
+package com.example.administrator.newjavabase.utils.app;
 
 import android.app.Activity;
 import android.content.Context;

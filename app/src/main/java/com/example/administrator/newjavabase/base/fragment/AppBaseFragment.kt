@@ -2,7 +2,7 @@ package com.whty.xzfpos.base
 
 import butterknife.ButterKnife
 import com.axl.android.frameworkbase.ui.BaseFragment
-import com.example.administrator.newjavabase.utils.publicutils.PreferencesUtil
+import com.example.administrator.newjavabase.utils.app.PreferencesUtil
 import com.google.gson.Gson
 
 /**

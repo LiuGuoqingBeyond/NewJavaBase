@@ -5,7 +5,7 @@ import butterknife.ButterKnife
 import com.axl.android.frameworkbase.ui.BaseBackFragment
 import com.axl.android.frameworkbase.view.statusbar.StatusBarCompat
 import com.example.administrator.newjavabase.base.app.GlobalApp
-import com.example.administrator.newjavabase.utils.publicutils.PreferencesUtil
+import com.example.administrator.newjavabase.utils.app.PreferencesUtil
 
 /**
  * User: Axl_Jacobs(Axl.Jacobs@gmail.com)

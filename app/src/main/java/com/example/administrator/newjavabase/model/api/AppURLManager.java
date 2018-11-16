@@ -11,6 +11,6 @@ import com.example.administrator.newjavabase.BuildConfig;
 public class AppURLManager {
 
     // 登录地址
-    public static final String REQ_LOGIN_PATH = BuildConfig.BASEURL + "";
+    public static final String REQ_LOGIN_PATH = BuildConfig.BASEURL + "login";
 
 }

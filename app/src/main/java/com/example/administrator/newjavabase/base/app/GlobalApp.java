@@ -10,8 +10,6 @@ import com.example.administrator.newjavabase.model.constant.AppConfig;
 import com.example.administrator.newjavabase.utils.exception.CrashHandler;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
-import com.squareup.leakcanary.LeakCanary;
-import com.squareup.leakcanary.RefWatcher;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.umeng.analytics.MobclickAgent;
 
@@ -28,7 +26,7 @@ import java.util.List;
 public class GlobalApp extends BaseApplication {
 
     private static GlobalApp sInstance;
-    private RefWatcher mRefWatcher;
+//    private RefWatcher mRefWatcher;
 
     private static List<Activity> listActivity = null;
 
@@ -48,11 +46,11 @@ public class GlobalApp extends BaseApplication {
             }
         });
 
-        if (LeakCanary.isInAnalyzerProcess(this)) {
+        /*if (LeakCanary.isInAnalyzerProcess(this)) {
             // This process is dedicated to LeakCanary for heap analysis. release模式下不引用
             return;
         }
-        mRefWatcher = LeakCanary.install(this);
+        mRefWatcher = LeakCanary.install(this);*/
 
         if (Boolean.valueOf(BuildConfig.IS_OFFICIAL)) {
             MobclickAgent.startWithConfigure(new MobclickAgent.UMAnalyticsConfig(this,

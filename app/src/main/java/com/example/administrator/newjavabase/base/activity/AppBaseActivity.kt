@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.axl.android.frameworkbase.ui.AbsBaseActivity
 import com.axl.android.frameworkbase.view.statusbar.StatusBarCompat
 import com.example.administrator.newjavabase.base.app.GlobalApp
-import com.example.administrator.newjavabase.utils.publicutils.PreferencesUtil
+import com.example.administrator.newjavabase.utils.app.PreferencesUtil
 import com.google.gson.Gson
 import com.orhanobut.logger.Logger
 import com.tbruyelle.rxpermissions2.RxPermissions

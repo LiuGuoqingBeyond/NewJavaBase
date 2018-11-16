@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/defaultPadding"
+    android:paddingStart="@dimen/defaultPadding">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="74dp"
+        android:src="@mipmap/pic_launchlogo" />
+
+    <TextView
+        style="@style/textStyle_welcome_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+        android:text="@string/login_welcome_text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/defaultItemHeight">
+
+        <ImageView
+            android:id="@+id/img_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/defaultPadding"
+            android:src="@mipmap/icon_user" />
+
+        <com.example.administrator.newjavabase.widget.EditTextWithDEL
+            android:id="@+id/et_account"
+            style="@style/textStyle_etText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/img_account"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="dlhe"
+            android:hint="@string/login_account_hint"
+            android:paddingEnd="@dimen/defaultPadding"
+            android:paddingStart="@dimen/defaultPadding"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividingLineHeight"
+        android:layout_below="@id/et_account"
+        android:background="@drawable/item_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/defaultPadding">
+
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/defaultPadding"
+            android:src="@mipmap/icon_password" />
+
+        <ImageView
+            android:id="@+id/img_eyePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/defaultPadding"
+            android:paddingStart="@dimen/defaultPadding"
+            android:src="@mipmap/icon_eyes_highlight" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/textStyle_etText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/img_eyePassword"
+            android:layout_toRightOf="@id/img_password"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/login_password_hint"
+            android:text="123123"
+            android:inputType="textPassword"
+            android:paddingEnd="@dimen/defaultPadding"
+            android:paddingStart="@dimen/defaultPadding"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividingLineHeight"
+        android:layout_below="@id/et_account"
+        android:background="@drawable/item_line_bg" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        style="@style/textStyle_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/halfDefaultPadding"
+        android:visibility="gone"
+        tools:text="465465464" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btnStyle_normal"
+        android:layout_marginTop="@dimen/defaultItemHeight"
+        android:text="@string/login_btn" />
+
+</LinearLayout>

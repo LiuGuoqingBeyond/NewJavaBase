@@ -54,8 +54,8 @@ android {
             minSdkVersion 17
             applicationId rootProject.ext.applicationId
             dimension "official"
-            manifestPlaceholders = [app_name: rootProject.ext.appDebugName, app_icon: "@mipmap/ic_launcher"]
-            buildConfigField "String", "BASEURL", "\"https://cx.qtopay.cn:90/\""
+            manifestPlaceholders = [app_name: rootProject.ext.appDebugName, app_icon: "@mipmap/ic_launcher", gaode_map_key: "4f2cdcc7470ba03ec052dccc9e9a2f3d"]
+            buildConfigField "String", "BASEURL", "\"http://192.168.2.253:8101/mobileServerGate/agentMobileServer/\""
             buildConfigField "String", "BASE_URL_GATEWAY", "\"https://218.18.232.65:8082/\""
             buildConfigField "String", "BASE_URL_NEW", "\"http://192.168.2.253:8101/\""
             buildConfigField "String", "GATEWAY_SIGNATURE_CODE", "\"KjFaQRyeyApMpOX\""
@@ -70,8 +70,8 @@ android {
             minSdkVersion 17
             applicationId rootProject.ext.applicationId
             dimension "official"
-            manifestPlaceholders = [app_name: rootProject.ext.appName, app_icon: "@mipmap/ic_launcher"]
-            buildConfigField "String", "BASEURL", "\"https://192.168.2.70:8443/\""
+            manifestPlaceholders = [app_name: rootProject.ext.appName, app_icon: "@mipmap/ic_launcher", gaode_map_key: "9d04f57300f53bb237e6ac9ef7241f63"]
+            buildConfigField "String", "BASEURL", "\"http://192.168.2.253:8101/mobileServerGate/agentMobileServer/\""
             buildConfigField "String", "BASE_URL_GATEWAY", "\"https://gateway.qtopay.cn:8081/\""
             buildConfigField "String", "BASE_URL_NEW", "\"https://ss.qtopay.cn:8105/\""
             buildConfigField "String", "WS_SERVER_URL", "\"http://192.168.2.235:6451/\""
@@ -156,9 +156,7 @@ dependencies {
     compile "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"
     implementation "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
     compile "com.android.support:percent:$rootProject.ext.supportLibraryVersion"
-
     compile project(':AFrameLib')
-
     compile "com.tencent.bugly:crashreport:$rootProject.ext.buglyVersion"
     compile "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
     compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
@@ -186,7 +184,6 @@ dependencies {
     //下拉刷新
     compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-1'
     compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-1'
-
     compile 'com.lzy.widget:imagepicker:0.6.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     compile "org.jetbrains.anko:anko-coroutines:$rootProject.ext.AnkoVersion"
@@ -195,12 +192,15 @@ dependencies {
     compile "org.jetbrains.anko:anko-design:$rootProject.ext.AnkoVersion"
     compile 'com.amap.api:location:latest.integration'
     compile 'com.alibaba:fastjson:1.1.59.android'
+
     //implementation "cn.jiguang.sdk:jpush:$rootProject.ext.JPushVersion"
+
     //implementation "cn.jiguang.sdk:jcore:$rootProject.ext.JPushCcoreVersion"
 
     //compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
     compile 'com.contrarywind:Android-PickerView:3.2.6'
-    debugCompile "com.squareup.leakcanary:leakcanary-android:$leakcanary"
+    /*debugCompile "com.squareup.leakcanary:leakcanary-android:$leakcanary"
     releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary"
-    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary"
+    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary"*/
+    implementation files('libs/commons-lang-2.6.jar')
 }
