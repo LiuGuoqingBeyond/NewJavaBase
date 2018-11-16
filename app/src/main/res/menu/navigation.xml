@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_icon_tag_home_sel"
+        android:title="@string/bottom_nav_home"/>
+
+
+    <item
+        android:id="@+id/navigation_credit"
+        android:icon="@drawable/ic_icon_tag_card_sel"
+        android:title="@string/bottom_nav_gank"/>
+
+    <item
+        android:id="@+id/navigation_generalize"
+        android:icon="@drawable/ic_icon_tag_gift_sel"
+        android:title="@string/bottom_nav_knowledge"/>
+
+    <item
+        android:id="@+id/navigation_project"
+        android:icon="@drawable/ic_icon_tag_gift_sel"
+        android:title="@string/bottom_nav_project"/>
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_icon_tag_my_sel"
+        android:title="@string/bottom_nav_me"/>
+
+</menu>
